@@ -114,7 +114,7 @@ describe('mongodb-mongoose/rest-api', () => {
 
           expect(
               response.data.products,
-              'массив пустой бля'+JSON.stringify(response.data.products)
+              'массив пустой'
           ).to.be.empty;
         });
 
