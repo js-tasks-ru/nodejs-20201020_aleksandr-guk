@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 const connection = require('../libs/connection');
+const Schema = mongoose.Schema;
 
-const subCategorySchema = new mongoose.Schema({
+const subCategorySchema = new Schema({
   title: {
     type: String,
     required: true,
   },
 });
 
-const categorySchema = new mongoose.Schema({
+const categorySchema = new Schema({
   title: {
     type: String,
     required: true,
   },
-
   subcategories: [subCategorySchema],
 });
 
